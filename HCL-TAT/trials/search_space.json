@@ -1,0 +1,7 @@
+{
+    "alpha":{"_type":"choice","_value":[5]},
+    "beta": {"_type": "choice", "_value": [5]},
+    "K": {"_type": "choice", "_value": [5]},
+    "Q": {"_type": "choice", "_value": [5]},
+    "O": {"_type":  "choice", "_value": [1]}
+}
