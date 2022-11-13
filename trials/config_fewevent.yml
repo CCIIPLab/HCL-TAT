@@ -1,0 +1,28 @@
+authorName: xxx
+experimentName: few_shot_ed_fewevent
+
+# 同时运行的 trial 数量
+trialConcurrency: 1
+
+# 实验最大运行时长
+maxExecDuration: 10h
+
+# 此项设置为 empty 意为无限大
+maxTrialNum: 5
+
+# choice: local, remote
+trainingServicePlatform: local
+
+# search space file
+searchSpacePath: /home/xxx/code/PA-CRF/trials/search_space.json
+
+# choice: true, false
+useAnnotation: false
+tuner:
+  builtinTunerName: TPE
+trial:
+  command: bash /home/xxx/code/PA-CRF/run.sh
+  codeDir: /home/xxx/code/PA-CRF/trials
+  gpuNum: 1
+localConfig:
+  useActiveGpu: true
